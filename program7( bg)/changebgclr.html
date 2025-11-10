@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Event</title>
+</head>
+<body>
+  <h2>Change Background Color</h2>
+  <button onclick="changeclr()">Change Color</button>
+
+  <script>
+    function changeclr() {
+      const colors = ["red", "green", "purple", "blue", "yellow"];
+      const randomcolor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomcolor;
+    }
+  </script>
+</body>
+</html>
+
